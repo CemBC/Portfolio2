@@ -64,7 +64,21 @@ class _ImageCarouselState extends State<ImageCarousel> {
                         child: Image.asset(_images[_index],
                           fit: BoxFit.fitWidth,),)
                   ),
-                  
+                  SizedBox(height: 100),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        FilledButton(
+                          onPressed: _prevImage,
+                          child: Icon(Icons.arrow_back),
+                        ),
+                        SizedBox(width: 100),
+                        FilledButton(
+                          onPressed: _nextImage,
+                          child: Icon(Icons.arrow_forward),
+                        )
+                      ]
+                  )
                 ]
             )
         ));
