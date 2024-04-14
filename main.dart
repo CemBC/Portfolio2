@@ -40,6 +40,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+          backgroundColor: Colors.black,
             body:  Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -49,11 +50,11 @@ class _ImageCarouselState extends State<ImageCarousel> {
                       margin: EdgeInsets.all(20.00),
                       padding: EdgeInsets.all(10.00),
                       decoration: BoxDecoration(
-                          border: Border.all(color: Colors.blue, width: 5.0),
+                          border: Border.all(color: Colors.white, width: 5.0),
                           borderRadius: BorderRadius.circular(10),
                           boxShadow: [
                             const BoxShadow(
-                                color: Colors.grey,
+                                color: Colors.teal,
                                 spreadRadius: 10,
                                 blurRadius: 7,
                                 offset: Offset(0,3)
