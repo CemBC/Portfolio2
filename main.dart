@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-
+  runApp(ImageCarousel());
 }
 
 class ImageCarousel extends StatefulWidget{
@@ -10,8 +10,16 @@ class ImageCarousel extends StatefulWidget{
   State<ImageCarousel> createState() => _ImageCarouselState();
 }
 
-class _ImageCarousel extends State<ImageCarousel> {
-  
-}
+class _ImageCarouselState extends State<ImageCarousel> {
+  int _index = 0;
 
+  List<String> _images = [
+    "assets/images/cat1.jpeg",
+    "assets/images/cat2.jpeg",
+    "assets/images/cat3.jpeg",
+    "assets/images/cat4.jpeg",
+    "assets/images/cat5.jpeg",
+    "assets/images/cat6.jpeg"
+  ];
+}
 
